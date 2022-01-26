@@ -1,8 +1,12 @@
-package com.example.demo.kakao;
+package com.example.demo.google;
+
+import com.example.demo.naver.NaverApp;
+
+import java.util.Scanner;
 
 /**
- * packageName: com.example.demo.kakao
- * fileName     : KakaoApp
+ * packageName: com.example.demo.google
+ * fileName     : GoogleDemo
  * author       : 전종현
  * date         : 2022-01-25
  * desc         :
@@ -11,6 +15,5 @@ package com.example.demo.kakao;
  * ================================
  * 2022-01-25        전종현       최초 생성
  */
-
-public class KakaoApp {
+public class GoogleDemo {
 }
