@@ -18,7 +18,7 @@ public class BmiApp {
    private String name;
    private String cm;
    private String kg;
-   public String bmi(String name, String cm, String kg){
+   public String getbmi(String name, String cm, String kg){
       this.name = name;
       this.cm = cm;
       this.kg = kg;

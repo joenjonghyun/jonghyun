@@ -12,12 +12,12 @@ package com.example.demo.calc;
  * 2022-01-25        전종현       최초 생성
  */
 public class CalcApp {
-    public static String CLACAPP = "calc";
+    public static String CLACAPP = "계산기";
     private int num1;
     private String opcode;
     private int num2;
 
-    String calc(int num1, String opcode, int num2) {
+    String getcalc(int num1, String opcode, int num2) {
         this.num1 = num1;
         this.opcode = opcode;
         this.num2 = num2;

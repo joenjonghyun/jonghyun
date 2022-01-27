@@ -12,12 +12,12 @@ package com.example.demo.login;
  * 2022-01-26        전종현       최초 생성
  */
 public class LoginApp {
-    public static String LoginApp = "login";
+    public static String LoginApp = "로그인";
     private String id;
     private String pw;
     private String name;
     static String PASSWARD = "abc";
-    public String login(String id, String pw, String name){
+    public String getlogin(String id, String pw, String name){
         this.id = id;
         this.pw = pw;
         this.name = name;

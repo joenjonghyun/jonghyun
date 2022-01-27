@@ -14,7 +14,7 @@ package com.example.demo.google;
 public class GoogleApp {
     public static String GOOGLEAPP = "google";
     private String url;
-    public String google(String url){
+    public String getgoogle(String url){
         this.url = url;
         String res = String.format("%s 검색결과",this.url);
         return res;
