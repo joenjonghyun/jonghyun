@@ -1,8 +1,6 @@
-package com.example.demo.google;
+package com.example.demo.service;
 
-import com.example.demo.naver.NaverApp;
-
-import java.util.Scanner;
+import com.example.demo.domain.GoogleDTO;
 
 /**
  * packageName: com.example.demo.google
@@ -15,9 +13,9 @@ import java.util.Scanner;
  * ================================
  * 2022-01-25        전종현       최초 생성
  */
-public class GoogleDemo {
-    public String execute(String url) {
-        GoogleApp googleApp = new GoogleApp();
-        return googleApp.getgoogle(url);
+public class GoogleService {
+    public String getGoogle(GoogleDTO google) {
+        String res = String.format("%s 검색결과",google.getUrl());
+        return google.getgoogle();
     }
 }

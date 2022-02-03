@@ -1,6 +1,4 @@
-package com.example.demo.kakao;
-
-import java.util.Scanner;
+package com.example.demo.service;
 
 /**
  * packageName: com.example.demo.kakao
@@ -13,5 +11,5 @@ import java.util.Scanner;
  * ================================
  * 2022-01-25        전종현       최초 생성
  */
-public class KakaoDemo {
+public class KakaoService {
 }

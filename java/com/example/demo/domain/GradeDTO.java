@@ -1,6 +1,4 @@
-package com.example.demo.grade;
-
-import java.util.Scanner;
+package com.example.demo.domain;
 
 /**
  * packageName: com.example.demo.grade
@@ -30,29 +28,42 @@ import java.util.Scanner;
  * ================================
  * 2022-01-26        전종현       최초 생성
  */
-public class GradeApp {
+public class GradeDTO {
     public static String GRADEAPP = "성적표";
     private String name;
     private int kor;
     private int eng;
     private int math;
-    public String getGrade(String name, int kor, int eng, int math){
-        this.name = name;
-        this.kor = kor;
-        this.eng = eng;
-        this.math = math;
-        int total = kor + eng + math;
-        int avg = total / 3;
-        String pass = (avg >= 60) ? "합격" : "불합격";
-        String res = String.format(" * ########## %s ########\n" +
-                " * 이름: %s\n" +
-                " * > 국어: %d점\n" +
-                " * > 영어: %d점\n" +
-                " * > 수학: %d점\n" +
-                " * 총점: %d점\n" +
-                " * 평균(정수): %d점\n" +
-                " * 합격여부: %s\n" +
-                " * #######################", GRADEAPP, name, kor, eng, math, total, avg, pass);
-        return res;
+
+    public String getName(){
+        return name;
     }
+    public void setName(String name){
+        this.name = name;
+    }
+    public int getKor(){
+        return kor;
+    }
+    public void setKor(int kor){
+        this.kor = kor;
+    }
+    public int getEng(){
+        return eng;
+    }
+    public void setEng(int eng){
+        this.eng = eng;
+    }
+    public int getMath(){
+        return math;
+    }
+    public void setMath(int math){
+        this.math = math;
+    }
+
+    public String toString(){
+        return String.format("name %s kor %d eng %d math %d", this.name, this.kor, this.eng, this.math);
+
+    }
+
+
 }

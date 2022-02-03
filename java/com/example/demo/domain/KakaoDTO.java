@@ -1,4 +1,4 @@
-package com.example.demo.kakao;
+package com.example.demo.domain;
 
 /**
  * packageName: com.example.demo.kakao
@@ -12,5 +12,5 @@ package com.example.demo.kakao;
  * 2022-01-25        전종현       최초 생성
  */
 
-public class KakaoApp {
+public class KakaoDTO {
 }
