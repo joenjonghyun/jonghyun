@@ -85,15 +85,5 @@ public class DemoController {
             System.out.println(result);
          }
         }
-        /*if(select.equals("1")){
-            System.out.println("BMI");}
-        if(select.equals("2")){
-            System.out.println("CALC");}
-        if(select.equals("3")){
-            System.out.println("SEARCH");}
-        if(select.equals("4")){
-            System.out.println("GRADE");}
-        if(select.equals("5")){
-            System.out.println("LOGIN");}*/
     }
 
