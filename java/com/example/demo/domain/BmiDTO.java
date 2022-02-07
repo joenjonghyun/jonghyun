@@ -14,30 +14,30 @@ package com.example.demo.domain;
 public class BmiDTO {
    public static String BmiApp = "bmi";
    private String name;
-   private String cm;
-   private String kg;
+   private double tall;
+   private double weight;
 
-   public String getName(){
+   public String getName() {
       return name;
    }
-   public void setName(String name){
+
+   public void setName(String name) {
       this.name = name;
    }
-   public String getCm(){
-      return cm;
-   }
-   public void setCm(String cm){
-      this.cm = cm;
-   }
-   public String getKg(){
-      return kg;
-   }
-   public void setKg(String kg){
-      this.kg = kg;
+
+   public double getTall() {
+      return tall;
    }
 
-   public String getBmi(){
-      String res = String.format("%s 정상",this.name,this.cm,this.kg);
-      return res;
+   public void setTall(double tall) {
+      this.tall = tall;
+   }
+
+   public double getWeight() {
+      return weight;
+   }
+
+   public void setWeight(double weight) {
+      this.weight = weight;
    }
 }

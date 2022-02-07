@@ -15,7 +15,7 @@ package com.example.demo.controller;
  */
 public class ArrayExam {
     public static void main(String[] args) {
-        String[] arr = Quiz1();
+        String[] arr = Quiz();
         String s = "";
         System.out.println("팀장이 맡은 과제만 출력하세요");
         for (int i = 0 ; i < arr.length; i++){
@@ -43,7 +43,7 @@ public class ArrayExam {
         System.out.println(s);
     }
 
-    private static String[] Quiz1() {
+    private static String[] Quiz() {
         System.out.println("팀별 과제를  출력하세요.");
         String[] arr = {"홍정명", "전종현", "노홍주", "양정오", "정경준",
                 "깊이", "탐욕법", "정렬", "이분탐색", "완전탐색",
