@@ -11,5 +11,9 @@ package com.example.demo.algorithm.service;
  * ================================
  * 2022-02-08        전종현       최초 생성
  */
-public interface DpsService {
+public interface DpService {
+    int expression(int N, int number);
+    int triangle(int[][] triangle);
+    int toSchool(int m, int n, int[][] puddles);
+    int stealing(int[] money);
 }

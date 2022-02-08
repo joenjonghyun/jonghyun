@@ -16,9 +16,6 @@ public class DemoApplication {
 		OopController oopController = new OopController();
 		AuthController authController = new AuthController();
 		QuizController quizController = new QuizController();
-		quizController.execute(scanner);
-		authController.execute(scanner);
-		oopController.execute(scanner);
 		while (true){
 			System.out.println(" 메뉴를 입력하세요\n " +
 					" 0.EXIT " + " 1. 알고리즘 " + " 2. 핸드폰 " + " 3. 멤버 " + " 4. 퀴즈 ");
@@ -29,11 +26,17 @@ public class DemoApplication {
 				case "1" :
 					System.out.println(" 1. 알고리즘 ");break;
 				case "2" :
-					System.out.println(" 2. 핸드폰 ");break;
+					System.out.println(" 2. 핸드폰 ");
+					oopController.execute(scanner);
+					break;
 				case "3" :
-					System.out.println(" 3. 멤버 ");break;
+					System.out.println(" 3. 멤버 ");
+					authController.execute(scanner);
+					break;
 				case "4" :
-					System.out.println(" 4. 퀴즈 ");break;
+					System.out.println(" 4. 퀴즈 ");
+					quizController.execute(scanner);
+					break;
 				default:
 					System.out.println("잘못된 번호");break;
 			}
