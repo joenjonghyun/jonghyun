@@ -1,40 +1,39 @@
 package com.example.demo.oop.service;
 
-import java.util.Scanner;
+import com.example.demo.oop.domain.CelPhone;
+import com.example.demo.oop.domain.GalPhone;
+import com.example.demo.oop.domain.IPhone;
+import com.example.demo.oop.domain.Phone;
 
 /**
- * packageName: com.example.demo.service
+ * packageName: com.example.demo.oop.service
  * fileName     : PhoneServiceImpl
  * author       : 전종현
- * date         : 2022-02-08
+ * date         : 2022-02-09
  * desc         :
  * ================================
  * DATE              AUTHOR        NOTE
  * ================================
- * 2022-02-08        전종현       최초 생성
+ * 2022-02-09        전종현       최초 생성
  */
-public class PhoneServiceImpl implements PhoneService {
+public class PhoneServiceImpl implements PhoneService{
     @Override
-    public void usePhone(Scanner scanner) {
-        System.out.println("1. 집전화");
-
+    public void usePhone(Phone phone) {
+        System.out.println(phone.toString());
     }
 
     @Override
-    public void useCelPhone(Scanner scanner) {
-        System.out.println("2. 휴대폰");
-
+    public void useCelPhone(CelPhone celPhone) {
+        System.out.println(celPhone.toString());
     }
 
     @Override
-    public void useIPhone(Scanner scanner) {
-        System.out.println("3. 아이폰");
-
+    public void useIPhone(IPhone iPhone) {
+        System.out.println(iPhone.toString());
     }
 
     @Override
-    public void useGalPhone(Scanner scanner) {
-        System.out.println("4. 갤럭시노트");
-
+    public void useGalPhone(GalPhone galPhone) {
+        System.out.println(galPhone.toString());
     }
 }
