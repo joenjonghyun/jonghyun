@@ -4,9 +4,9 @@ import com.example.demo.member.domain.BmiDTO;
 import com.example.demo.member.domain.CalcDTO;
 import com.example.demo.member.domain.GoogleDTO;
 import com.example.demo.member.domain.GradeDTO;
-import com.example.demo.member.domain.LoginDTO;
-import com.example.demo.member.service.StudentService;
-import com.example.demo.member.service.StudentServiceImpl;
+import com.example.demo.member.domain.UserDTO;
+import com.example.demo.member.service.MemberService;
+import com.example.demo.member.service.MemberServiceImpl;
 
 import java.util.Scanner;
 
@@ -27,8 +27,8 @@ public class AuthController {
         CalcDTO calc = new CalcDTO();
         GoogleDTO google = new GoogleDTO();
         GradeDTO grade = new GradeDTO();
-        LoginDTO login = new LoginDTO();
-        StudentService service = new StudentServiceImpl();
+        UserDTO login = new UserDTO();
+        MemberService service = new MemberServiceImpl();
         while(true){
             System.out.println("메뉴 선택");
             String menu = "0=EXIT 1.BMI 2.CALC 3.GOOGLE 4.GRADE 5.LOGIN";
@@ -40,10 +40,11 @@ public class AuthController {
                     System.out.println("Exit"); return;
                 case "1" : result = "BMI";
                     System.out.println(BmiDTO.BmiApp+("\n이름, 키, 몸무게"));
-                    bmi.setName(scanner.next());
-                    bmi.setTall(scanner.nextDouble());
-                    bmi.setWeight(scanner.nextDouble());
-                    result = service.getbmi(bmi);
+                    BmiDTO b = BmiDTO.getInstance();
+                    b.setName(scanner.next());
+                    b.setTall(scanner.nextDouble());
+                    b.setWeight(scanner.nextDouble());
+                    result = service.getbmi(b);
                 break;
                 case "2" : result = "CALC";
                     System.out.println(CalcDTO.CLACAPP+("\n숫자1, 연산자, 숫자2 입력"));
@@ -59,18 +60,20 @@ public class AuthController {
                 break;
                 case "4" : result = "GRADE";
                     System.out.println(GradeDTO.GRADEAPP+("\n이름, 국어, 영어, 수학"));
-                    grade.setName(scanner.next());
-                    grade.setKor(scanner.nextInt());
-                    grade.setEng(scanner.nextInt());
-                    grade.setMath(scanner.nextInt());
-                    result = service.grade(grade);
+                    GradeDTO g = GradeDTO.getInstance();
+                    g.setName(scanner.next());
+                    g.setKor(scanner.nextInt());
+                    g.setEng(scanner.nextInt());
+                    g.setMath(scanner.nextInt());
+                    result = service.grade(g);
                 break;
                 case "5" : result = "LOGIN";
-                    System.out.println(LoginDTO.LoginApp+("\n아이디, 비밀번호, 이름"));
-                    login.setId(scanner.next());
-                    login.setPw(scanner.next());
-                    login.setName(scanner.next());
-                    result = service.login(login);
+                    System.out.println(UserDTO.LoginApp+("\n아이디, 비밀번호, 이름"));
+                    UserDTO u = UserDTO.getInstance();
+                    u.setId(scanner.next());
+                    u.setPw(scanner.next());
+                    u.setName(scanner.next());
+                    result = service.login(u);
                 break;
                 default  : result = "WRONG"; break;
             }

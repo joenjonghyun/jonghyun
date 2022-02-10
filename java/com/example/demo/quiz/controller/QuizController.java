@@ -20,8 +20,9 @@ public class QuizController {
         Feb06Service feb06Service = new Feb06ServiceImpl();
         Feb07Service feb07Service = new Feb07ServiceImpl();
         Feb08Service feb08Service = new Feb08ServiceImpl();
+        Feb10Service feb10Service = new Feb10ServiceImpl();
         while (true){
-            System.out.println("[서브메뉴]\n" + " 0. Exit " + " 1. 2월6일 " + " 2. 2월 7일" + " 3. 2월 8일 " + " 4. 2월 9일 ");
+            System.out.println("[서브메뉴]\n" + " 0. Exit " + " 1. 2월6일 " + " 2. 2월 7일" + " 3. 2월 8일 " + " 4. 2월 9일 " + " 5. 2월 10일 ");
             switch (scanner.next()){
                 case "0" :
                     System.out.println("Exit");
@@ -51,7 +52,9 @@ public class QuizController {
                             System.out.println("worng number");
                             break;
                     }
+                case "2" :
                     System.out.println("[소메뉴]\n" + "0.Exit \n" +  "1.주사위 \n" + "2.가위바위보 \n" + "3.소수 구하기\n" + "4.윤년/평년\n" + "5.임의숫자 맞추기");
+
                     switch (scanner.next()){
                         case "0" :
                             System.out.println("0.Exit");return;
@@ -79,7 +82,9 @@ public class QuizController {
                             System.out.println("wrong number");
                             break;
                     }
+                case "3" :
                     System.out.println("[소메뉴]\n" + "0.Exit \n" +  "1.로또 \n" + "2.야구 \n" + "3.좌석예약\n" + "4.은행 입출금\n" + "5.구구단");
+
                     switch (scanner.next()){
                         case "0" :
                             System.out.println("0.Exit");
@@ -106,6 +111,24 @@ public class QuizController {
                             break;
                         default:
                             System.out.println("worng number");break;
+                    }
+                case "5" :
+                    System.out.println("[소메뉴]\n" + "0.Exit \n" +  "1.거품정렬 \n" + "2.삽입정렬 \n" + "3.선택정렬\n" + "4.은행 입출금\n" + "5.구구단");
+
+                    switch (scanner.next()){
+                        case "0" :
+                            System.out.println("0.Exit");return;
+                        case "1" :
+                            System.out.println("1. 거품정렬");
+                            break;
+                        case "2" :
+                            System.out.println("2.삽입정렬");
+                            break;
+                        case "3" :
+                            System.out.println("3.선택정렬");
+                            break;
+                        default:
+                            System.out.println("wrong number");break;
                     }
             }
         }

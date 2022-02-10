@@ -11,8 +11,18 @@ package com.example.demo.member.domain;
  * ================================
  * 2022-01-26        전종현       최초 생성
  */
-public class LoginDTO {
+public class UserDTO {
     public static String LoginApp = "로그인";
+
+    private final static UserDTO userDTO = new UserDTO();
+
+    public UserDTO(){}
+
+    public static UserDTO getInstance(){
+        return userDTO;
+    }
+
+
     private String id;
     private String pw;
     private String name;

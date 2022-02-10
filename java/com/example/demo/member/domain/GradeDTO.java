@@ -30,10 +30,22 @@ package com.example.demo.member.domain;
  */
 public class GradeDTO {
     public static String GRADEAPP = "성적표";
+
+
+    private final static GradeDTO gradeDTO = new GradeDTO();
+
+    public GradeDTO(){}
+
+    public static GradeDTO getInstance(){return gradeDTO;}
+
+
     private String name;
     private int kor;
     private int eng;
     private int math;
+
+
+
 
     public String getName(){
         return name;

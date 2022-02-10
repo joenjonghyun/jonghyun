@@ -3,7 +3,7 @@ package com.example.demo.member.service;
 import com.example.demo.member.domain.*;
 
 import static com.example.demo.member.domain.GradeDTO.GRADEAPP;
-import static com.example.demo.member.domain.LoginDTO.PASSWARD;
+import static com.example.demo.member.domain.UserDTO.PASSWARD;
 
 /**
  * packageName: com.example.demo.service
@@ -16,7 +16,9 @@ import static com.example.demo.member.domain.LoginDTO.PASSWARD;
  * ================================
  * 2022-02-07        전종현       최초 생성
  */
-public class StudentServiceImpl implements StudentService {
+public class MemberServiceImpl implements MemberService {
+
+
     /**
      *  BMI = w / t * t
      *  고도 비만 : 35 이상
@@ -98,7 +100,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public String login(LoginDTO login) {
+    public String login(UserDTO login) {
         String res;
         res = (login.getPw().equals(PASSWARD)) ? String.format("%s 님의 비번 %s 가 맞습니다. 로그인 성공", login.getName(), login.getPw())
                 : String.format("%s 의 ID 는 맞고, 비번 %s 가 틀립니다. 로그인 실패", login.getId(), login.getPw());

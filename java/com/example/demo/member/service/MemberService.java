@@ -13,10 +13,10 @@ import com.example.demo.member.domain.*;
  * ================================
  * 2022-02-07        전종현       최초 생성
  */
-public interface StudentService {
+public interface MemberService {
     String getbmi(BmiDTO bmi);
     String calc(CalcDTO calc);
     String search(GoogleDTO google);
     String grade(GradeDTO grade);
-    String login(LoginDTO login);
+    String login(UserDTO login);
 }

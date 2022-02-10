@@ -12,7 +12,7 @@ package com.example.demo.oop.repository;
  * 2022-02-09        전종현       최초 생성
  */
 public class Test {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         System.out.println("테스트");
     }
 }
