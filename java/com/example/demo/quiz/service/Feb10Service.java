@@ -15,13 +15,13 @@ import java.util.Scanner;
  *    // 아래 문제들은 모두 스캐너 없이 , Math랜덤으로 처리합니다
  */
 public interface Feb10Service {
-    void bubbleSort(Scanner scanner);
-    void insertionSort(Scanner scanner);
-    void selectionSort(Scanner scanner);
-    void quickSort(Scanner scanner);
-    void mergeSort(Scanner scanner);
-    void magicSquare(Scanner scanner);
-    void zigzag(Scanner scanner);
-    void rectangleStarPrint(Scanner scanner);
-    void triangleStarPrint(Scanner scanner);
+    void bubbleSort();
+    void insertionSort();
+    void selectionSort();
+    void quickSort();
+    void mergeSort();
+    void magicSquare();
+    void zigzag();
+    void rectangleStarPrint();
+    void triangleStarPrint();
 }

@@ -15,46 +15,47 @@ import java.util.Scanner;
  */
 public class Feb10ServiceImpl implements Feb10Service{
     @Override
-    public void bubbleSort(Scanner scanner) {
-    }
-
-    @Override
-    public void insertionSort(Scanner scanner) {
+    public void bubbleSort() {
 
     }
 
     @Override
-    public void selectionSort(Scanner scanner) {
+    public void insertionSort() {
 
     }
 
     @Override
-    public void quickSort(Scanner scanner) {
+    public void selectionSort() {
 
     }
 
     @Override
-    public void mergeSort(Scanner scanner) {
+    public void quickSort() {
 
     }
 
     @Override
-    public void magicSquare(Scanner scanner) {
+    public void mergeSort() {
 
     }
 
     @Override
-    public void zigzag(Scanner scanner) {
+    public void magicSquare() {
 
     }
 
     @Override
-    public void rectangleStarPrint(Scanner scanner) {
+    public void zigzag() {
 
     }
 
     @Override
-    public void triangleStarPrint(Scanner scanner) {
+    public void rectangleStarPrint() {
+
+    }
+
+    @Override
+    public void triangleStarPrint() {
 
     }
 }

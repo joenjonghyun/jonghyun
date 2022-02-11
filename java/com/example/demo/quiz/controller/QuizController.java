@@ -113,7 +113,7 @@ public class QuizController {
                             System.out.println("worng number");break;
                     }
                 case "5" :
-                    System.out.println("[소메뉴]\n" + "0.Exit \n" +  "1.거품정렬 \n" + "2.삽입정렬 \n" + "3.선택정렬\n" + "4.은행 입출금\n" + "5.구구단");
+                    System.out.println("[소메뉴]\n" + "0.Exit \n" +  "1.거품정렬 \n" + "2.삽입정렬 \n" + "3.선택정렬\n");
 
                     switch (scanner.next()){
                         case "0" :
