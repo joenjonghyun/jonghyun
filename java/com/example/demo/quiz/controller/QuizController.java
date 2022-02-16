@@ -120,12 +120,15 @@ public class QuizController {
                             System.out.println("0.Exit");return;
                         case "1" :
                             System.out.println("1. 거품정렬");
+                            feb10Service.bubbleSort();
                             break;
                         case "2" :
                             System.out.println("2.삽입정렬");
+                            feb10Service.insertionSort();
                             break;
                         case "3" :
                             System.out.println("3.선택정렬");
+                            feb10Service.selectionSort();
                             break;
                         default:
                             System.out.println("wrong number");break;
