@@ -17,7 +17,6 @@ public class Feb10ServiceImpl implements Feb10Service{
     @Override
     public void bubbleSort() {
         int[] arr = new int[10];
-
         for (int i=0; i<arr.length; i++) {
             arr[i]= (int)(Math.random()*100)+1;  //랜덤함수를 이용해 1~100까지의 정수 중 10개를 뽑는다.
             for (int j=0; j<i; j++) {
